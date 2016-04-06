@@ -4,7 +4,7 @@ import evolution
 
 fitness.set_solution('{}{}{}{}'.format('11', '0000', '0' * (8 * 63), '11'))
 
-pop = population.Population.initial(50)
+pop = population.Population.initial(100)
 gen_count = 0
 while pop.get_fittest().fitness() < fitness.max_fitness():
     gen_count += 1
